@@ -1,0 +1,4 @@
+pip --default-timeout=100 install flask -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+
+ pip --default-timeout=100 install flask flask_bootstrap flask_moment flask_script  flask_sqlalchemy -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com

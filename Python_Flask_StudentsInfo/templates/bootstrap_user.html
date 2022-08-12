@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填写学生信息</title>
+
+</head>
+<body>
+    <form action="/login/students_info" method="POST">
+            <div aria-modal="true" aria-label="填写学生信息" class="el-stulog"
+                 style="margin-top: 15vh; width: 500px;">
+                <div class="el-stulog__header">
+                    <span class="el-STUlog__title">新增填写学生信息</span>
+                </div>
+            </div>
+
+
+            <div class="el-form-item is-required el-form-item--medium">
+                <label class="el-form-item__label" style="width: 120px;:">姓名</label>
+                <div data-v-3a1dc4af class="el-input el-input--medium is-disabled"></div>
+                <input type="text" autocomplete="on" name="name" placeholder="请输入姓名"
+                       class="el-textarea__inner">
+            </div>
+            <div class="el-form-item is-required el-form-item--medium">
+                <label class="el-form-item__label" style="width: 120px;:">手机号</label>
+                <div data-v-3a1dc4af class="el-input el-input--medium is-disabled"></div>
+                <input type="number" autocomplete="off" name="number" placeholder="请输入手机号" maxlength="11"
+                       class="el-textarea__inner">
+            </div>
+            <div class="el-form-item is-required el-form-item--medium">
+                <label class="el-form-item__label" style="width: 120px;:">邮箱号码</label>
+                <div data-v-3a1dc4af class="el-input el-input--medium is-disabled"></div>
+                <input type="text" autocomplete="on" name="email" placeholder="请输入邮箱号码"
+                       class="el-textarea__inner">
+            </div>
+
+            <div class="el-form-item el-form-item--medium">
+                <label class="el-form-item__label" style="width: 120px;">请选择老师</label>
+                <div data-v-3a1dc4af class="el-form-item__content" style="margin-left: 120px;">
+                    <div>
+                        <input type="radio" id="teacher" name="teacher" value=0 checked>
+                        <label for="tuition">高老师</label>
+                        <input type="radio" id="teacher" name="teacher" value=1>
+                        <label for="tuition">赵老师</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-v-3a1dc4af class="el-form-item el-form-item--medium">
+                <label class="el-radio-group" style="width: 120px;">选择班型</label>
+                <div data-v-3a1dc4af class="el-radio-group" style="margin-left: 120px;">
+                    <div role="radiogroup" class="el-radio-group">
+                        <input type="radio" id="class_type" name="class_type" value=0 checked>
+                        <label for="class_type">全程私教组-14400</label>
+                        <input type="radio" id="class_type" name="class_type" value=1>
+                        <label for="class_type">就业强化组-17400</label>
+                    </div>
+                </div>
+            </div>
+            <div data-v-3a1dc4af class="el-form-item el-form-item--medium">
+                <label class="el-radio-group" style="width: 120px;">选择学费价格</label>
+                <div data-v-3a1dc4af class="el-radio-group" style="margin-left: 120px;">
+                    <div role="radiogroup" class="el-radio-group">
+                        <input type="radio" id="tuition" name="tuition" value=0 checked>
+                        <label for="tuition">14400</label>
+                        <input type="radio" id="tuition" name="tuition" value=1>
+                        <label for="tuition">17400</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="el-form-item buttonFunc">
+                        <span class="el-form-item__content" style="margin-left: 120px;">
+                            <p><button data-v-44d15149 type="submit"
+                              name="tijiao"  class="el-button--info">
+                                <span>提交信息</span>
+                            </button><p>
+                        </span>
+            </div>
+
+
+    </form>
+</body>
+</html>
